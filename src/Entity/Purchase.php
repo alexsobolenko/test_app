@@ -18,10 +18,6 @@ class Purchase
     use Trait\IdTrait;
     use Trait\TimestampTrait;
 
-    #[ORM\Id]
-    #[ORM\Column(name: 'id', type: 'string')]
-    private string $id;
-
     #[ORM\Column(name: 'status', type: PurchaseStatusType::NAME)]
     private Status $status;
 
